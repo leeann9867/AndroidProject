@@ -4,10 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.jeongdaeri.bottomnavwithfragments.HomeFragment
-import com.jeongdaeri.bottomnavwithfragments.MyPageFragment
-import com.jeongdaeri.bottomnavwithfragments.OrderListFragment
-import com.jeongdaeri.bottomnavwithfragments.SmartOrderFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
