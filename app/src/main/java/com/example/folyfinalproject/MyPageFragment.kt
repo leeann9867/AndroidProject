@@ -48,6 +48,7 @@ class MyPageFragment : Fragment() {
 
         return view
 
+
         btn_Book.setOnClickListener {
             var intent = Intent(this, BookActivity::class.java)
             startActivity(intent)
@@ -69,7 +70,7 @@ class MyPageFragment : Fragment() {
         }
 
         btn_Logout.setOnClickListener {
-            var intent = Intent(this, LogoutActivity::class.java)
+            var intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
 
@@ -92,7 +93,6 @@ class MyPageFragment : Fragment() {
             var intent = Intent(this, VersionInfoActivity::class.java)
             startActivity(intent)
         }
-
     }
 
 }
