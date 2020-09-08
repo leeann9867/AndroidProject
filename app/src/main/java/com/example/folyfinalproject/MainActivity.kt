@@ -1,5 +1,6 @@
 package com.example.folyfinalproject
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -13,7 +14,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var smartOrderFragment: SmartOrderFragment
     private lateinit var orderListFragment: OrderListFragment
     private lateinit var myPageFragment: MyPageFragment
-    private lateinit var mapActivity: TestActivity
+
     //--------------------------------------------------------- 박세진_0829 ver.1
 
     //--------------------------------------------------------- 박세진_0829 ver.1
@@ -52,10 +53,11 @@ class MainActivity : AppCompatActivity() {
                 supportFragmentManager.beginTransaction().replace(R.id.fragments_frame, homeFragment).commit()
             }
             R.id.smart_order -> {
-                Log.d(TAG, "MainActivity - 스마트오더 클릭!")
-                smartOrderFragment = SmartOrderFragment.newInstance()
-                supportFragmentManager.beginTransaction().replace(R.id.fragments_frame, smartOrderFragment).commit()
-
+//                Log.d(TAG, "MainActivity - 스마트오더 클릭!")
+//                smartOrderFragment = SmartOrderFragment.newInstance()
+//                supportFragmentManager.beginTransaction().replace(R.id.fragments_frame, smartOrderFragment).commit()
+                var intent = Intent(this,MapActivity::class.java)
+                startActivity(intent)
             }
             R.id.order_list -> {
                 Log.d(TAG, "MainActivity - 오더리스트 클릭!")

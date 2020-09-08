@@ -1,5 +1,6 @@
 package com.example.folyfinalproject
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
@@ -31,6 +32,10 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
             Toast.makeText(this, "한국폴리텍대학교", Toast.LENGTH_SHORT).show()
             true
 
+        }
+        backmain.setOnClickListener{
+            var intent = Intent(this,MainActivity::class.java)
+            startActivity(intent)
         }
         //네이버 정보창
         infoWindow.adapter = object : InfoWindow.DefaultTextAdapter(application) {
