@@ -73,6 +73,12 @@ class LoginActivity : AppCompatActivity() {
 
 
         }
+        login_button.setOnClickListener {
+
+            val intent = Intent(this, MyPageFragment::class.java)
+            startActivity(intent)
+
+        }
 
 
     }
