@@ -49,51 +49,50 @@ class MyPageFragment : Fragment() {
 
         return view
 
-
-        btn_Book.setOnClickListener {
-            var intent = Intent(this, BookActivity::class.java)
-            startActivity(intent)
-        }
-
-        btn_ChangeTend.setOnClickListener {
-            var intent = Intent(this, ChangeTendencyActivity::class.java)
-            startActivity(intent)
-        }
-
-        btn_Coupon.setOnClickListener {
-            var intent = Intent(this, CouponActivity::class.java)
-            startActivity(intent)
-        }
-
-        btn_Help.setOnClickListener {
-            var intent = Intent(this, HelpActivity::class.java)
-            startActivity(intent)
-        }
-
-        btn_Logout.setOnClickListener {
-            var intent = Intent(this, LoginActivity::class.java)
-            startActivity(intent)
-        }
-
-        btn_Point.setOnClickListener {
-            var intent = Intent(this, PointActivity::class.java)
-            startActivity(intent)
-        }
-
-        btn_Review.setOnClickListener {
-            var intent = Intent(this, ReviewActivity::class.java)
-            startActivity(intent)
-        }
-
-        btn_Setting.setOnClickListener {
-            var intent = Intent(this, SettingActivity::class.java)
-            startActivity(intent)
-        }
-
-        btn_VerInfo.setOnClickListener {
-            var intent = Intent(this, VersionInfoActivity::class.java)
-            startActivity(intent)
-        }
+//       btn_Book.setOnClickListener {
+//            var intent = Intent(this, BookActivity::class.java)
+//            startActivity(intent)
+//        }
+//
+//        btn_ChangeTend.setOnClickListener {
+//            var intent = Intent(this, ChangeTendencyActivity::class.java)
+//            startActivity(intent)
+//        }
+//
+//        btn_Coupon.setOnClickListener {
+//            var intent = Intent(this, CouponActivity::class.java)
+//            startActivity(intent)
+//        }
+//
+//        btn_Help.setOnClickListener {
+//            var intent = Intent(this, HelpActivity::class.java)
+//            startActivity(intent)
+//        }
+//
+//        btn_Logout.setOnClickListener {
+//            var intent = Intent(this, LoginActivity::class.java)
+//            startActivity(intent)
+//        }
+//
+//        btn_Point.setOnClickListener {
+//            var intent = Intent(this, PointActivity::class.java)
+//            startActivity(intent)
+//        }
+//
+//        btn_Review.setOnClickListener {
+//            var intent = Intent(this, ReviewActivity::class.java)
+//            startActivity(intent)
+//        }
+//
+//        btn_Setting.setOnClickListener {
+//            var intent = Intent(this, SettingActivity::class.java)
+//            startActivity(intent)
+//        }
+//
+//        btn_VerInfo.setOnClickListener {
+//            var intent = Intent(this, VersionInfoActivity::class.java)
+//            startActivity(intent)
+//        }
     }
 
 }
