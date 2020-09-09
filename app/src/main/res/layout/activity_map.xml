@@ -9,86 +9,238 @@
     <fragment
         android:id="@+id/map"
         android:name="com.naver.maps.map.MapFragment"
-        android:layout_width="412dp"
-        android:layout_height="397dp"
+        android:layout_width="414dp"
+        android:layout_height="423dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <View
-        android:id="@+id/cookview"
-        android:layout_width="374dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:background="@drawable/border_rouund"
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/map" />
+        app:layout_constraintTop_toBottomOf="@+id/map">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/cookview"
+                    android:layout_width="376dp"
+                    android:layout_height="87dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginBottom="9dp"
+                    android:background="@drawable/border_rouund"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="112dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="16dp"
+                    android:text="명륜 진사갈비"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/imageView"
+                    app:layout_constraintTop_toTopOf="@+id/cookview" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="189dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="16dp"
+                    android:text="영업시간 : 매일 11:00 - 23:00"
+                    app:layout_constraintStart_toEndOf="@+id/imageView"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="49dp"
+                    android:layout_height="63dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:radius="13dp"
+                    app:layout_constraintStart_toStartOf="@+id/cookview"
+                    app:layout_constraintTop_toTopOf="@+id/cookview"
+                    app:srcCompat="@drawable/men" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="82dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="84dp"
+                    android:layout_marginLeft="84dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/border_white"
+                    android:text="예약하기"
+                    app:layout_constraintStart_toEndOf="@+id/textView"
+                    app:layout_constraintTop_toTopOf="@+id/cookview" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="82dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="84dp"
+                    android:layout_marginLeft="84dp"
+                    android:layout_marginTop="44dp"
+                    android:background="@drawable/border_white"
+                    android:text="픽업하기"
+                    app:layout_constraintStart_toEndOf="@+id/textView"
+                    app:layout_constraintTop_toTopOf="@+id/button" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/cookview2"
+                    android:layout_width="374dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginBottom="9dp"
+                    android:background="@drawable/border_rouund"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="66dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="84dp"
+                    android:layout_marginLeft="84dp"
+                    android:layout_marginTop="8dp"
+                    android:text="음식점2"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="@+id/cookview2"
+                    app:layout_constraintTop_toTopOf="@+id/cookview2" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/cookview4"
+                    android:layout_width="374dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginBottom="9dp"
+                    android:background="@drawable/border_rouund"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/cookview3"
+                    android:layout_width="374dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginBottom="9dp"
+                    android:background="@drawable/border_rouund"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/cookview5"
+                    android:layout_width="374dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginBottom="9dp"
+                    android:background="@drawable/border_rouund"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/button18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="416dp"
+                android:layout_height="504dp"
+                app:srcCompat="@drawable/common_full_open_on_phone" />
+
+        </LinearLayout>
+    </ScrollView>
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="112dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:text="명륜 진사갈비"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/cookview" />
-
-    <View
-        android:id="@+id/cookview2"
-        android:layout_width="374dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:background="@drawable/border_rouund"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cookview" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="66dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp"
-        android:text="음식점2"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/cookview2"
-        app:layout_constraintTop_toTopOf="@+id/cookview2" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="57dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="12dp"
-        android:radius="13dp"
-        app:layout_constraintStart_toStartOf="@+id/cookview"
-        app:layout_constraintTop_toTopOf="@+id/cookview"
-        app:srcCompat="@drawable/men" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="189dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="6dp"
-        android:text="영업시간 : 매일 11:00 - 23:00"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+            android:id="@+id/backmain"
+            android:layout_width="46dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/back"
+            app:layout_constraintStart_toStartOf="@+id/map"
+            app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
