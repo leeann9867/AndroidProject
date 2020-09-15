@@ -9,7 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".JoinInfogoogleActivity"></activity>
+        <activity android:name=".MapActivity">
+            <meta-data
+                android:name="com.naver.maps.map.CLIENT_ID"
+                android:value="nnv85idnj2" />
+            <meta-data
+                android:name="com.naver.maps.map.CLIENT_TYPE"
+                android:value="gov" />
+        </activity>
+        <activity android:name=".JoinActivity" />
+        <activity android:name=".JoinInfoActivity" />
+        <activity android:name=".IdFindActivity" />
+        <activity android:name=".PasswordFindActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

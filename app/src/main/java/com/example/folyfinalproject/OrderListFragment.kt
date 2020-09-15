@@ -1,4 +1,4 @@
-package com.jeongdaeri.bottomnavwithfragments
+package com.example.folyfinalproject
 
 import android.content.Context
 import android.os.Bundle
