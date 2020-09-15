@@ -102,6 +102,7 @@ class MyPageFragment : Fragment() {
 //            var intent = Intent(this, VersionInfoActivity::class.java)
 //            startActivity(intent)
 //        }
+
     }
 
 }
