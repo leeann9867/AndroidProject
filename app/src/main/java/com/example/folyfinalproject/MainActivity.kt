@@ -1,10 +1,12 @@
 package com.example.folyfinalproject
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
+import java.util.Calendar.getInstance
 
 class MainActivity : AppCompatActivity() {
     //--------------------------------------------------------- 박세진_0829 ver.1
@@ -12,6 +14,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var smartOrderFragment: SmartOrderFragment
     private lateinit var orderListFragment: OrderListFragment
     private lateinit var myPageFragment: MyPageFragment
+
     //--------------------------------------------------------- 박세진_0829 ver.1
 
     //--------------------------------------------------------- 박세진_0829 ver.1
@@ -29,7 +32,7 @@ class MainActivity : AppCompatActivity() {
 
         // 레이아웃과 연결
         setContentView(R.layout.activity_main)
-
+        //Log.d("DeviceToken: ", //FirebaseInstanceId,getInstance().getToken().toString())
         Log.d(TAG, "MainActivity - onCreate() called")
 
         bottom_nav.setOnNavigationItemSelectedListener(onBottomNavItemSelectedListener)
@@ -50,9 +53,11 @@ class MainActivity : AppCompatActivity() {
                 supportFragmentManager.beginTransaction().replace(R.id.fragments_frame, homeFragment).commit()
             }
             R.id.smart_order -> {
-                Log.d(TAG, "MainActivity - 스마트오더 클릭!")
-                smartOrderFragment = SmartOrderFragment.newInstance()
-                supportFragmentManager.beginTransaction().replace(R.id.fragments_frame, smartOrderFragment).commit()
+//                Log.d(TAG, "MainActivity - 스마트오더 클릭!")
+//                smartOrderFragment = SmartOrderFragment.newInstance()
+//                supportFragmentManager.beginTransaction().replace(R.id.fragments_frame, smartOrderFragment).commit()
+                var intent = Intent(this,MapActivity::class.java)
+                startActivity(intent)
             }
             R.id.order_list -> {
                 Log.d(TAG, "MainActivity - 오더리스트 클릭!")

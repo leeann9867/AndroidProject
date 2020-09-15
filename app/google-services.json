@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "244335980563",
+    "firebase_url": "https://polylastproject.firebaseio.com",
+    "project_id": "polylastproject",
+    "storage_bucket": "polylastproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244335980563:android:a06a8aae107200b56dcfe6",
+        "android_client_info": {
+          "package_name": "com.example.folyfinalproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "244335980563-ap9pcb6ercejf4kkbd7orc0vg670hnu8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.folyfinalproject",
+            "certificate_hash": "f77155482dff7ddb680f69e464d6371510a92517"
+          }
+        },
+        {
+          "client_id": "244335980563-mao3uhm0qljum5l0oh1fh5j8t7vi1h9o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNMluAaaRb1h-Hr9OaA6nr9Tqwl8IKRiU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "244335980563-mao3uhm0qljum5l0oh1fh5j8t7vi1h9o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

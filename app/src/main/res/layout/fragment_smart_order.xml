@@ -8,12 +8,15 @@
     android:gravity="center"
     >
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/btn_smo"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="스마트오더"
-        android:textSize="50dp"
-        />
+        android:text="스마테스트" />
 
-
+    <Button
+        android:id="@+id/btn_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="픽테스트" />
 </LinearLayout>
