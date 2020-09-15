@@ -18,7 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/mypage"
+
         tools:srcCompat="@drawable/mypage" />
 
     <TextView
@@ -60,22 +60,21 @@
         android:layout_height="67dp"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="292dp"
+        android:layout_marginTop="29dp"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
         android:layout_weight="1"
         android:background="#FFC107"
         android:text="북마크"
         app:layout_constraintEnd_toStartOf="@+id/btn_Review"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/email" />
 
     <Button
         android:id="@+id/btn_Review"
         android:layout_width="76dp"
         android:layout_height="67dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="29dp"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
         android:layout_weight="1"
@@ -101,14 +100,14 @@
         android:id="@+id/btn_Point"
         android:layout_width="76dp"
         android:layout_height="67dp"
-        android:layout_marginTop="293dp"
+        android:layout_marginTop="29dp"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
         android:layout_weight="1"
         android:background="#FFC107"
         android:text="포인트"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/email" />
 
     <LinearLayout
         android:layout_width="0dp"
@@ -125,6 +124,7 @@
             android:layout_height="65dp"
             android:background="#FFFFFF"
             android:gravity="center|left"
+            android:paddingLeft="20dp"
             android:text="성향변경"
             android:textSize="24sp" />
 
@@ -134,6 +134,7 @@
             android:layout_height="65dp"
             android:background="#FFFFFF"
             android:gravity="center|left"
+            android:paddingLeft="20dp"
             android:text="설정"
             android:textSize="24sp" />
 
@@ -143,6 +144,7 @@
             android:layout_height="65dp"
             android:background="#FFFFFF"
             android:gravity="center|left"
+            android:paddingLeft="20dp"
             android:text="로그아웃"
             android:textSize="24sp" />
 
@@ -152,6 +154,7 @@
             android:layout_height="65dp"
             android:background="#FFFFFF"
             android:gravity="center|left"
+            android:paddingLeft="20dp"
             android:text="도움말"
             android:textSize="24sp" />
 
@@ -161,6 +164,7 @@
             android:layout_height="65dp"
             android:background="#FFFFFF"
             android:gravity="center|left"
+            android:paddingLeft="20dp"
             android:text="버전정보"
             android:textSize="24sp" />
     </LinearLayout>

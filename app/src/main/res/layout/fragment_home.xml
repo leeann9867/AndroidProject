@@ -19,28 +19,28 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_weight="1"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:background="@drawable/drow1" />
 
         <ImageButton
             android:id="@+id/btn_chaina"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_weight="1"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:background="@drawable/drow2" />
 
         <ImageButton
             android:id="@+id/btn_japan"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_weight="1"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:background="@drawable/drow3" />
 
         <ImageButton
             android:id="@+id/btn_euro"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_weight="1"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:background="@drawable/drow4" />
     </LinearLayout>
 
     <LinearLayout
@@ -53,28 +53,28 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_weight="1"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:background="@drawable/drow5" />
 
         <ImageButton
             android:id="@+id/btn_food1"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_weight="1"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:background="@drawable/drow6" />
 
         <ImageButton
             android:id="@+id/btn_food2"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_weight="1"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:background="@drawable/drow7" />
 
         <ImageButton
             android:id="@+id/btn_food3"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_weight="1"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:background="@drawable/drow8" />
     </LinearLayout>
 
     <LinearLayout
@@ -87,34 +87,35 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_weight="1"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:background="@drawable/drow9" />
 
         <ImageButton
             android:id="@+id/btn_food5"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_weight="1"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:background="@drawable/drow10" />
 
         <ImageButton
             android:id="@+id/btn_food6"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_weight="1"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:background="@drawable/drow11" />
 
         <ImageButton
             android:id="@+id/btn_food7"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_weight="1"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:background="@drawable/drow12" />
     </LinearLayout>
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="40dp"
-        android:text="이번 BEST 맛집!" />
+        android:paddingLeft="20dp"
+        android:text="이번 BEST 맛집!"
+        android:textSize="40dp" />
 </LinearLayout>
