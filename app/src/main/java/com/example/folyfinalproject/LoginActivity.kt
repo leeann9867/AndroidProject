@@ -73,14 +73,7 @@ class LoginActivity : AppCompatActivity() {
 
 
         }
-        login_button.setOnClickListener {
-
-            val intent = Intent(this, MyPageFragment::class.java)
-            startActivity(intent)
-
-        }
-
-
+      
     }
     public override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
