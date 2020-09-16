@@ -23,6 +23,7 @@ class JoinInfoActivity : AppCompatActivity() {
 
         join_hu2.setOnClickListener {
 
+
             if (join_info_google_email_area.text.toString() == " ") {
                 Log.e("JoinInfoActivity", "실패")
             } else {
