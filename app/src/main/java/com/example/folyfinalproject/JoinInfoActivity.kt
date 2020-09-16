@@ -22,26 +22,37 @@ class JoinInfoActivity : AppCompatActivity() {
 
 
         join_hu2.setOnClickListener {
-            val nickname = hashMapOf(
 
-                "nickname" to join_info_google_email_area.text.toString()
 
-            )
-
-            db.collection("nickname")
-                .document(auth.currentUser?.uid.toString())
-                .set(nickname)
-                .addOnSuccessListener {
-                    Log.e("JoinInfoActivity", "성공")
-                    intent = Intent(this, LoginActivity::class.java)
-                    startActivity(intent)
-                }
-                .addOnFailureListener {
-                    Log.e("JoinInfoActivity", "실패")
-
-                }
-
+            if (join_info_google_email_area.text.toString() == " ") {
+                Log.e("JoinInfoActivity", "실패")
+            } else {
+                Log.e("JoinInfoActivity", "성공")
+                intent = Intent(this, LoginActivity::class.java)
+                startActivity(intent)
+            }
         }
+
+        val nickname = hashMapOf(
+
+            "nickname" to join_info_google_email_area.text.toString()
+
+        )
+
+        db.collection("nickname")
+            .document(auth.currentUser?.uid.toString())
+            .set(nickname)
+            .addOnSuccessListener {
+                Log.e("JoinInfoActivity", "성공")
+                intent = Intent(this, LoginActivity::class.java)
+                startActivity(intent)
+            }
+            .addOnFailureListener {
+                Log.e("JoinInfoActivity", "실패")
+
+
+            }
     }
 }
+
 

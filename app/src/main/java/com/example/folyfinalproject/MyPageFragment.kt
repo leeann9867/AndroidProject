@@ -8,6 +8,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import kotlinx.android.synthetic.main.activity_join.*
+import kotlinx.android.synthetic.main.activity_joininfo.*
 import kotlinx.android.synthetic.main.fragment_my.*
 
 class MyPageFragment : Fragment() {
@@ -47,6 +49,14 @@ class MyPageFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_my, container, false)
 
         return view
+
+        val nick = hashMapOf(
+
+            "nickname" to join_info_google_email_area.text.toString()
+
+        )
+
+        nickname.setText(nick.toString())
 
 //       btn_Book.setOnClickListener {
 //            var intent = Intent(this, BookActivity::class.java)
@@ -92,6 +102,7 @@ class MyPageFragment : Fragment() {
 //            var intent = Intent(this, VersionInfoActivity::class.java)
 //            startActivity(intent)
 //        }
+
     }
 
 }
